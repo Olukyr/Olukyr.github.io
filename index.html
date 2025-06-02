@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome-List de Portfólios dos Alunos do 3EM da Escola Dr. Alfredo Cardoso</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark-mode">
+<body>
+  <header>
+    <img src="minha-foto.jpg" alt="Minha Foto" class="profile-img" />
+    <h1>Seu Nome Aqui</h1>
+    <p>Desenvolvedor | Designer | Criador</p>
+  </header>
 
-<header>
-    <h1 id="page-title">Awesome-List de Portfólios dos Alunos do 3EM da Escola Dr. Alfredo Cardoso </h1>
-    <div class="buttons">
-        <button id="toggle-theme">☀️ Modo Claro</button>
+  <section class="sobre">
+    <h2>Sobre Mim</h2>
+    <textarea placeholder="Escreva sobre você..."></textarea>
+  </section>
+
+  <section class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto 1.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto 2.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição do projeto 3.</p>
+      </div>
     </div>
-</header>
+  </section>
 
-<main>
-    <table id="main-table" class="full-width">
-        <thead>
-            <tr>
-                <td>Nome</td>
-                <td>🔗Meu Portifólio</td>
-                <td>GitHub</td>
-            </tr>
-        </thead>
-        <tbody>
-              <tr>
-                <td>Guilherme</td>
-                <td><a href="https://github.com/Olukyr" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/Olukyr" target="_blank">GitHub</a></td>
-            </tr>
-              <tr>
-                <td>Raissa Caetano</td>
-                <td><a href="https://github.com/Issayz" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/Issayz" target="_blank">GitHub</a></td>
-            </tr>
-             <tr>
-                <td>Thiago H.</td>
-                <td><a href="https://github.com/bxnefly" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/bxnefly" target="_blank">GitHub</a></td>
-               </tr>
-                <td>Murilo Marcelino</td>
-                <td><a href=https://github.com/murilothales/" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/murilothales" target="_blank">GitHub</a></td>
-              </tr>
-             <tr>
-                <td>Diego C.</td>
-                <td><a href="https://github.com/D1eg0C" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/D1eg0C" target="_blank">GitHub</a></td>
-             <td>bruno assis</td>
-                <td><a href="https://github.com/bruninhoxis" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/bruninhoxis" target="_blank">GitHub</a></td>
-             <tr>
-                <td>Davi Rodrigues</td>
-                <td><a href=/https://github.com/davir40/" target="_blank">WebSite</a></td>
-                <td><a href=/https://github.com/davir40" target="_blank">GitHub</a></td>
-            </tr> 
-            <tr>
-                <td>Millena Rocha Rando</td>
-                <td><a href="https://github.com/mih-ter" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/mih-terT" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-                <td>Leonardo Grando</td>
-                <td><a href="https://Lgrando.github.io/" target="_blank">WebSite</a></td>
-                <td><a href="https://github.com/Lgrando" target="_blank">GitHub</a></td>
-            </tr>
+  <section class="contato">
+    <h2>Contato</h2>
+    <input type="email" placeholder="Seu e-mail" />
+    <textarea placeholder="Sua mensagem"></textarea>
+    <button onclick="enviarMensagem()">Enviar</button>
+  </section>
 
-
-        </tbody>
-    </table>
-</main>
-    
-
+  <script src="script.js"></script>
 </body>
-
 </html>
