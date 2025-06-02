@@ -1,166 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Para Meu Amor ❤️</title>
-  <link rel="icon" href="coração.png" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #ff9a9e, #fad0c4);
-      font-family: 'Courier New', monospace;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      overflow: hidden;
-    }
-
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      max-width: 600px;
-      text-align: center;
-      position: relative;
-      z-index: 10;
-    }
-
-    h1 {
-      color: #e91e63;
-      margin-bottom: 20px;
-    }
-
-    #mensagem {
-      font-size: 18px;
-      color: #333;
-      min-height: 150px;
-    }
-
-    button {
-      margin-top: 20px;
-      background-color: #e91e63;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-      background-color: #d81b60;
-    }
-
-    #surpresa {
-      margin-top: 20px;
-      display: none;
-      animation: fadeIn 2s forwards;
-    }
-
-    #surpresa img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .heart {
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background: red;
-      transform: rotate(45deg);
-      animation: float 10s infinite;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: '';
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background: red;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -7.5px;
-      left: 0;
-    }
-
-    .heart::after {
-      left: -7.5px;
-      top: 0;
-    }
-
-    @keyframes float {
-      0% {
-        bottom: 0;
-        opacity: 1;
-      }
-      100% {
-        bottom: 100%;
-        opacity: 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome-List de Portfólios dos Alunos do 3EM da Escola Dr. Alfredo Cardoso</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/js/script.js" defer></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Para o Amor da Minha Vida ❤️</h1>
-    <p id="mensagem"></p>
-    <button onclick="mostrarSurpresa()">Clique para uma Surpresa!</button>
-    <div id="surpresa">
-      <p>Te amo mais do que palavras podem dizer! 💖</p>
-      <img src="yasegui.jpeg" alt="Nosso Amor">
+<body class="dark-mode">
+
+<header>
+    <h1 id="page-title">Awesome-List de Portfólios dos Alunos do 3EM da Escola Dr. Alfredo Cardoso </h1>
+    <div class="buttons">
+        <button id="toggle-theme">☀️ Modo Claro</button>
     </div>
-  </div>
+</header>
 
-  <!-- corações animados -->
-  <script>
-    function digitarTexto(texto, elementoId, velocidade = 50) {
-      let i = 0;
-      const elemento = document.getElementById(elementoId);
-      function escrever() {
-        if (i < texto.length) {
-          elemento.innerHTML += texto.charAt(i);
-          i++;
-          setTimeout(escrever, velocidade);
-        }
-      }
-      escrever();
-    }
+<main>
+    <table id="main-table" class="full-width">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>🔗Meu Portifólio</td>
+                <td>GitHub</td>
+            </tr>
+        </thead>
+        <tbody>
+              <tr>
+                <td>Guilherme</td>
+                <td><a href="https://github.com/Olukyr" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/Olukyr" target="_blank">GitHub</a></td>
+            </tr>
+              <tr>
+                <td>Raissa Caetano</td>
+                <td><a href="https://github.com/Issayz" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/Issayz" target="_blank">GitHub</a></td>
+            </tr>
+             <tr>
+                <td>Thiago H.</td>
+                <td><a href="https://github.com/bxnefly" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/bxnefly" target="_blank">GitHub</a></td>
+               </tr>
+                <td>Murilo Marcelino</td>
+                <td><a href=https://github.com/murilothales/" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/murilothales" target="_blank">GitHub</a></td>
+              </tr>
+             <tr>
+                <td>Diego C.</td>
+                <td><a href="https://github.com/D1eg0C" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/D1eg0C" target="_blank">GitHub</a></td>
+             <td>bruno assis</td>
+                <td><a href="https://github.com/bruninhoxis" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/bruninhoxis" target="_blank">GitHub</a></td>
+             <tr>
+                <td>Davi Rodrigues</td>
+                <td><a href=/https://github.com/davir40/" target="_blank">WebSite</a></td>
+                <td><a href=/https://github.com/davir40" target="_blank">GitHub</a></td>
+            </tr> 
+            <tr>
+                <td>Millena Rocha Rando</td>
+                <td><a href="https://github.com/mih-ter" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/mih-terT" target="_blank">GitHub</a></td>
+            </tr>
+            <tr>
+                <td>Leonardo Grando</td>
+                <td><a href="https://Lgrando.github.io/" target="_blank">WebSite</a></td>
+                <td><a href="https://github.com/Lgrando" target="_blank">GitHub</a></td>
+            </tr>
 
-    const mensagem = `Amor da minha vida, cada momento ao seu lado é uma eternidade de felicidade.
-Seu sorriso ilumina meus dias e seu abraço é meu porto seguro.
-Sou grato por cada segundo contigo, e prometo cuidar do nosso amor com todo meu coração. 💘`;
 
-    window.onload = () => {
-      digitarTexto(mensagem, "mensagem", 40);
+        </tbody>
+    </table>
+</main>
+    
 
-      // corações
-      setInterval(() => {
-        const heart = document.createElement("div");
-        heart.classList.add("heart");
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.animationDuration = 5 + Math.random() * 5 + "s";
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 10000);
-      }, 500);
-    }
-
-    function mostrarSurpresa() {
-      document.getElementById("surpresa").style.display = "block";
-    }
-  </script>
 </body>
+
 </html>
