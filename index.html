@@ -1,63 +1,92 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Guilherme Dias Mota</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header class="hero">
-    <div class="container">
-      <img src="assets/foto.jpg" alt="Guilherme Dias Mota" class="foto-perfil" />
-      <h1>Guilherme Dias Mota</h1>
-      <p>Desenvolvedor Front-End • Criador de experiências digitais</p>
-    </div>
-  </header>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <section class="sobre">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      <p>Sou apaixonado por desenvolvimento web e tecnologias que impactam positivamente a vida das pessoas. Domino HTML, CSS, JavaScript e estou sempre aprendendo novas ferramentas. Busco transformar ideias em interfaces funcionais e intuitivas.</p>
-    </div>
-  </section>
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
 
-  <section class="projetos">
-    <div class="container">
-      <h2>Projetos</h2>
-      <div class="grid-projetos">
-        <div class="card">
-          <h3>Site Escola Alfredo Cardoso</h3>
-          <p>Site institucional responsivo para uma escola pública. HTML, CSS e JavaScript.</p>
-        </div>
-        <div class="card">
-          <h3>Calculadora Interativa</h3>
-          <p>App simples de calculadora com temas claro e escuro. 100% responsivo.</p>
-        </div>
-        <div class="card">
-          <h3>Portfólio Pessoal</h3>
-          <p>Meu próprio portfólio, com design clean, boas práticas de código e responsividade.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
 
-  <section class="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Vamos conversar? Me encontre nas redes:</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:guilhermemotajau123@email.com">guilhermemotajau123@email.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Guilherme" target="_blank">linkedin.com/in/Guilherme</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/Olukyr" target="_blank">github.com/Olukyr</a></li>
-      </ul>
-    </div>
-  </section>
+.perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
 
-  <footer>
-    <p>&copy; 2025 Guilherme Dias Mota • Todos os direitos reservados</p>
-  </footer>
+/* SECTIONS */
+section {
+  margin-top: 3rem;
+}
 
-</body>
-</html>
+h2 {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* GRID DE PROJETOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTATO */
+.contato ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contato a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
