@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio - Guilherme Dias Mota</title>
+  <title>Portfólio | Guilherme Dias Mota</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+
+  <header class="hero">
     <div class="container">
+      <img src="assets/foto.jpg" alt="Guilherme Dias Mota" class="foto-perfil" />
       <h1>Guilherme Dias Mota</h1>
-      <button id="toggle-theme">🌙</button>
+      <p>Desenvolvedor Front-End • Criador de experiências digitais</p>
     </div>
   </header>
 
   <section class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou um desenvolvedor apaixonado por criar interfaces bonitas e funcionais. Tenho experiência com HTML, CSS, JavaScript e estou sempre aprendendo novas tecnologias.</p>
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Sou apaixonado por desenvolvimento web e tecnologias que impactam positivamente a vida das pessoas. Domino HTML, CSS, JavaScript e estou sempre aprendendo novas ferramentas. Busco transformar ideias em interfaces funcionais e intuitivas.</p>
+    </div>
   </section>
 
   <section class="projetos">
-    <h2>Projetos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Site Escola Alfredo Cardoso</h3>
-        <p>Projeto de site responsivo para uma escola pública. Em andamento.</p>
-      </div>
-      <div class="card">
-        <h3>Calculadora Interativa</h3>
-        <p>App de calculadora feito em HTML, CSS e JavaScript puro.</p>
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="grid-projetos">
+        <div class="card">
+          <h3>Site Escola Alfredo Cardoso</h3>
+          <p>Site institucional responsivo para uma escola pública. HTML, CSS e JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Calculadora Interativa</h3>
+          <p>App simples de calculadora com temas claro e escuro. 100% responsivo.</p>
+        </div>
+        <div class="card">
+          <h3>Portfólio Pessoal</h3>
+          <p>Meu próprio portfólio, com design clean, boas práticas de código e responsividade.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:guilhermemotajau123@email.com">guilhermemotajau123@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/Guilherme" target="_blank">linkedin.com/in/Guilherme</a></p>
-    <p>GitHub: <a href="https://github.com/Olukyr" target="_blank">github.com/Olukyr</a></p>
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Me encontre nas redes:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:guilhermemotajau123@email.com">guilhermemotajau123@email.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Guilherme" target="_blank">linkedin.com/in/Guilherme</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Olukyr" target="_blank">github.com/Olukyr</a></li>
+      </ul>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Guilherme Dias Mota</p>
+    <p>&copy; 2025 Guilherme Dias Mota • Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>
