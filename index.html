@@ -1,92 +1,56 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme Dias Mota - Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="assets/foto.jpg" alt="Foto de Guilherme" class="perfil" />
+      <h1>Guilherme Dias Mota</h1>
+      <p>Desenvolvedor Front-End • Criador de Experiências Digitais</p>
+    </div>
+  </header>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
+  <section class="sobre container">
+    <h2>Sobre Mim</h2>
+    <p>
+      Desenvolvedor focado em criar interfaces limpas, acessíveis e responsivas. Busco oportunidades para crescer e aplicar minhas habilidades com HTML, CSS, JavaScript e outras tecnologias modernas.
+    </p>
+  </section>
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
+  <section class="projetos container">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Site Escola Alfredo Cardoso</h3>
+        <p>Website institucional com design responsivo para uma escola pública.</p>
+      </div>
+      <div class="card">
+        <h3>Calculadora Interativa</h3>
+        <p>Aplicação JavaScript com modo escuro e responsividade total.</p>
+      </div>
+      <div class="card">
+        <h3>Portfólio</h3>
+        <p>Este portfólio moderno com HTML5 e CSS3 para mostrar meus projetos.</p>
+      </div>
+    </div>
+  </section>
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-}
+  <section class="contato container">
+    <h2>Contato</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:guilhermemotajau123@email.com">guilhermemotajau123@email.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Guilherme" target="_blank">linkedin.com/in/Guilherme</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/Olukyr" target="_blank">github.com/Olukyr</a></li>
+    </ul>
+  </section>
 
-.perfil {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  margin-bottom: 1rem;
-}
-
-/* SECTIONS */
-section {
-  margin-top: 3rem;
-}
-
-h2 {
-  color: #4f46e5;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-/* GRID DE PROJETOS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* CONTATO */
-.contato ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.contato a {
-  color: #4f46e5;
-  text-decoration: none;
-}
-
-.contato a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER */
-footer {
-  background: #4f46e5;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+  <footer>
+    <p>&copy; 2025 Guilherme Dias Mota • Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
